@@ -94,3 +94,9 @@ Each module is independently designed for experimentation and scalability.
 - FastICA Algorithm
 - Statistical Signal Processing
 - Linear Algebra & Stochastic Methods
+
+## 🟣 How to Run
+
+```matlab
+run('src/run_bss_pipeline.m')
+```
