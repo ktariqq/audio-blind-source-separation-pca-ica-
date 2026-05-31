@@ -45,53 +45,6 @@ The results demonstrate that ICA provides significantly better separation of ind
 
 <br><br>
 
-<div align="center">
-
-<svg width="900" height="140" viewBox="0 0 900 140" xmlns="http://www.w3.org/2000/svg">
-
-  <defs>
-    <style>
-      .box { fill: #12121e; stroke: #8a2be2; stroke-width: 2; rx: 10; }
-      .text { fill: #ffffff; font-size: 14px; font-family: Arial, sans-serif; text-anchor: middle; }
-      .arrow { stroke: #8a2be2; stroke-width: 2; marker-end: url(#arrowhead); }
-    </style>
-
-    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
-      refX="10" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#8a2be2"/>
-    </marker>
-  </defs>
-
-  <!-- Boxes -->
-  <rect x="20" y="40" width="140" height="50" class="box"/>
-  <text x="90" y="70" class="text">Audio Sources</text>
-
-  <rect x="180" y="40" width="140" height="50" class="box"/>
-  <text x="250" y="70" class="text">Preprocessing</text>
-
-  <rect x="340" y="40" width="140" height="50" class="box"/>
-  <text x="410" y="70" class="text">Signal Mixing</text>
-
-  <rect x="500" y="40" width="140" height="50" class="box"/>
-  <text x="570" y="70" class="text">Noise Injection</text>
-
-  <rect x="660" y="40" width="100" height="50" class="box"/>
-  <text x="710" y="70" class="text">PCA / ICA</text>
-
-  <rect x="780" y="40" width="100" height="50" class="box"/>
-  <text x="830" y="70" class="text">Evaluation</text>
-
-  <!-- Arrows -->
-  <line x1="160" y1="65" x2="180" y2="65" class="arrow"/>
-  <line x1="320" y1="65" x2="340" y2="65" class="arrow"/>
-  <line x1="480" y1="65" x2="500" y2="65" class="arrow"/>
-  <line x1="640" y1="65" x2="660" y2="65" class="arrow"/>
-  <line x1="760" y1="65" x2="780" y2="65" class="arrow"/>
-
-</svg>
-
-</div>
-
 ## 🟣 Evaluation Metrics
 
 The system performance is evaluated using:
