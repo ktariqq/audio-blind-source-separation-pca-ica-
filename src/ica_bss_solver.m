@@ -1,6 +1,5 @@
-function Z_ica = ica_bss_solver(X_noisy)
+function Zica = ica_bss_solver(X_noisy, r)
 
-r = 2;
-[Z_ica, ~, ~, ~] = fastICA(X_noisy, r);
+[Zica, ~, ~, ~] = fastICA(X_noisy, r);
 
 end
