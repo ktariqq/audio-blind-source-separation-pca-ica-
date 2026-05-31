@@ -1,7 +1,7 @@
-function [S, fs] = signal_preprocess()
+function [voice, music, fs] = signal_preprocess(vpath, mpath)
 
-[voice, fs1] = audioread('../dataset/raw/voice_source.wav');
-[music, fs2] = audioread('../dataset/raw/music_source.wav');
+[voice, fs1] = audioread(vpath);
+[music, fs2] = audioread(mpath);
 
 fs = fs1;
 
@@ -13,15 +13,12 @@ music = music(1:minLen);
 voice = voice(:)';
 music = music(:)';
 
-% normalization
+% Normalize [-1,1]
 voice = voice / max(abs(voice));
 music = music / max(abs(music));
 
-% stack sources
-S = [voice; music];
-
-% standardization
-S = S - mean(S, 2);
-S = S ./ std(S, 0, 2);
+% Standardize
+voice = (voice - mean(voice)) / std(voice);
+music = (music - mean(music)) / std(music);
 
 end
